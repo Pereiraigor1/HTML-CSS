@@ -1,0 +1,47 @@
+
+/* Começando as coisinhas */
+
+body{
+	background-color:#00FBB4;
+}
+
+h1{
+	text-align: center;
+	color:green;
+}
+
+a{
+	color:green;
+	text-decoration: none
+}
+p {
+	font-family: normal;
+}
+
+h1.inicio{
+	text-align: center;
+	color:red;
+	text-decoration: none;
+}
+
+a.primeira{
+	color:green;
+	text-decoration: none;
+}
+
+h2 {
+	text-align: left;
+	text-decoration: none;
+}
+
+p.tradução {
+	text-align: justify;
+}
+
+h2.triti{
+	background-color: #00FBB4
+}
+img.autor{
+   padding: 5px 5px 15px;
+   margin-bottom: 10px; 
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mata Mosquito</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="mosquito.css">
+		<script type="text/javascript">
+			function iniciarJogo() {
+				// body...
+				var nivel = document.getElementById('nivel').value;
+				if (nivel==''){
+					alert('Selecione uma dificuldade válida!');
+				}
+				else{
+					window.location.href = "mosquito.html?"+nivel;
+				}
+			}	
+		</script>
+	</head>
+	<body>
+		<div class="conteiner">
+			<!-- Logotipo do Jogo -->
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<img src="imagens/game.png">
+					</div>
+				</div>
+			</div>
+
+			<!-- Seleção de Dificuldade -->
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<div class="mb-2">
+							<select class="form-control" id="nivel">
+								<option value="">-- Selecione o Nível --</option>	
+								<option value="normal">Normal</option>		
+								<option value="dificil">Dificil</option>		
+								<option value="impossivel">Impossível</option>		
+							</select>
+						</div> 
+					</div>
+				</div>
+			</div>
+
+			<!-- Botão de Reinicio -->
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<button type="button" class="btn btn-danger btn-lg" onclick="iniciarJogo()">Iniciar</button>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>

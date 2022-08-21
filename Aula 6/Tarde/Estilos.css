@@ -1,0 +1,35 @@
+/*Nome : Igor Rafael da Silva Pereira
+Aula 6 - Parte da manhã 
+FIC
+Desenvolvimento em WEB  
+Calculadora
+*/
+
+h1 {
+	text-align: center;
+	color: white;
+	margin-left: 60px;
+}
+
+table{
+	text-align: center;
+}
+
+body{
+	background-image: url(universe.jpg);
+}
+
+table{
+	margin-left:45%;
+}
+
+input{
+	 width: 50px;
+	 height: 50px;
+	 font-size: 25px;
+	 margin: 10;
+}
+
+*{
+	text-align: center;
+}

@@ -1,0 +1,36 @@
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+body.a{
+	background-color: #CEF6EC;
+}
+p{
+	text-align: justify;
+}
+
+h1 {
+	color: green;
+}
+
+a {
+	background-color: #2A0A12;
+	border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	-o-border-radius: 40px;
+}
+.au {
+	transition: width 4s;
+     background: black;
+}
+.centro {
+	text-align: center;
+}
+
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+  background-image:linear-gradient(white,#A4A4A4,black);}
+
+  

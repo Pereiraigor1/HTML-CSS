@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Arduino</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="Autordoprograma.html">
+<link rel="stylesheet" type="text/css" href="Estilo.css">
+<body class="a">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="Arduino.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Inicio</a>
+    <a href="Hardware_do_arduino.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Hadware do Arduino</a>
+    <a href="Software.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white ">Software</a>
+    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Tipos de Dados</a>
+    <a href="entrada_e_saida.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Função de Entrada e Saída</a>
+    <a href="Autor_do_site.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Autor do site</a>
+  </div>
+</div>
+
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="Tipos_de_Arduinos.html">Tipos de Arduinos</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="Tipo_de_controladores.html">Tipos de microcontroladores</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="Modulos.html">Obter módulos para arduino</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="Experimentos.html">Experimentos</a>
+</nav>
+  
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px">
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1> Tipos de Dados</h1>
+      <p>As variáveis podem assumir diferentes tipos de dados, tais tipos determinarão sua capacidade e numeração que poderá ser utilizada. Os tipos básicos de dados são   apresentados a seguir:</p> 
+      <ul>
+        <li> <strong> void : </strong> A palavra reservada void é usada em declarações de funções. Este tipo indica que a função não retorna nenhum valor quando é executada. <br>
+          Exemplo : <br>
+         // as funções setup e loop não retornam valores quando são executadas <br> 
+          void setup() <br> 
+          { <br>
+         // ... <br>
+          }<br>
+          void loop() <br>
+          {<br>
+          // ...<br>
+          }<br>
+        </li>
+           <li> <strong> Boolean : </strong> O tipo boolean pode representar valores booleanos, verdadeiro (true) ou falso(false). Um tipo boolean ocupa um byte da memória. <br>
+            Exemplo: <br>
+            int LEDpin = 5; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// LED no pino 5 <br>
+            int switchPin = 13; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// chave no 13 <br>
+            boolean running = false; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//variável booleana <br>
+            void setup()<br>
+            {<br>
+            pinMode(LEDpin, OUTPUT); &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//configura pino como saída <br>
+            pinMode(switchPin, INPUT); &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//configura pino como entrada<br>
+            digitalWrite(switchPin, HIGH); &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Liga pullup do pino<br>
+            }<br>
+            void loop()<br>
+            {<br>
+            if (digitalRead(switchPin) == LOW) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//se pino em nível baixo<br>
+            { // switch is pressed –<br>
+            // pullup keeps pin high<br>
+            //normally<br>
+            delay(100); &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// delay to debounce switch<br>
+            running = !running; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// toggle running variable<br>
+            digitalWrite(LEDpin, running) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// indicate via LED<br>
+           }<br>
+            }<br>
+           </li>
+
+           <li><strong>Char :</strong> O tipo char armazena valores de 1 byte. Caracteres são codificados em um único byte e são especificados na tabela ASCII. O tipo char é sinalizado e representa números de -128 a 127. Para números não sinalizados usa-se o tipo byte. <br>
+            Exemplo : <br>
+            char myChar = 'A'; <br>
+            char myChar = 65; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// both are equivalent <br>
+           </li>
+
+          </ul>
+         <h5 >Para mais exemplos, acesse : <a style="text-decoration: none" href="https://www.arduino.cc/reference/pt/">https://www.arduino.cc/reference/pt/</a> </h5>
+        </div>
+      </div>
+    </div>
+  </body>
+

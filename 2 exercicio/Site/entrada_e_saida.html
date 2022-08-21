@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Arduino</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="Autordoprograma.html">
+<link rel="stylesheet" type="text/css" href="Estilo.css">
+<body class="a">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="Arduino.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Inicio</a>
+    <a href="Hardware_do_arduino.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Hadware do Arduino</a>
+    <a href="Software.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white ">Software</a>
+    <a href="Tipos_de_Dados.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Tipos de Dados</a>
+    <a href="#" class="w3-bar-item w3-button  w3-theme-l1">Função de Entrada e Saída</a>
+    <a href="Autor_do_site.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Autor do site</a>
+  </div>
+</div>
+
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="Tipos_de_Arduinos.html">Tipos de Arduinos</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="Tipos_de_controladores.html">Tipos de microcontroladores</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="Modulos.html">Obter módulos para arduino</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="Experimentos.html">Experimentos</a>
+</nav>
+  
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px">
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1>Funções de Entrada e Saída no arduino</h1>
+      <p>O Arduino já possui funções internas para manipulação de I/O digital e analógico assim como funções para manipulações de bits, matemáticas, comunicação entre outras. A seguir serão apresentadas algumas dessas funções</p>
+
+      <p><strong>Funções de Entrada/Saída Digital :</strong> <b>pinMode()</b> configura um pino especifico para ser entrada ou saída digital. <br>
+      <strong> Sintaxe : </strong> pinMode(pino, modo) <br>
+       <strong> Parametros : </strong> Pino: deve-se colocar o numero correspondente ao pino que se deseja configurar, conforme placa que está trabalhando. <br>
+      <strong>Modo</strong>: deve-se colocar o modo que deseja configurar o pino. INPUT, OUTPUT, INPUT_PULLUP.
+</p>
+      <p> <b>Exemplo </b>: <br> <br>
+      int ledPin = 13; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// LED connected to digital pin 13 <br>
+      void setup()<br>
+      {<br>
+      pinMode(ledPin, OUTPUT); &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//sets the digital pin as output<br>
+      }<br>
+      void loop()<br>
+      {<br>
+      digitalWrite(ledPin, HIGH); &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//sets the LED on<br>
+      delay(1000); &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// waits for a second<br>
+      digitalWrite(ledPin, LOW);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // sets the LED off<br>
+      delay(1000); &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// waits for a second<br>
+      </p>
+      <p><b>DigitalWrite :</b> coloca um nível lógico Alto (HIGH, 5V) ou baixo (LOW, 0V) em um pino configurado como saída digital. 
+      <strong> Sintaxe : </strong> digitalWrite(pino, valor) <br>
+      <strong> Parametros : </strong> pino: Numero correspondente ao pino; <br>
+          <b>Valor:</b> HIGH OU LOW <br>
+        <p> <b>Exemplo </b>: <br> <br>
+          int ledPin = 13; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// LED connected to digital pin 13 <br>
+          void setup()<br>
+          {<br>
+          pinMode(ledPin, OUTPUT); &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// sets the digital pin as output<br>
+          }<br>
+        void loop()<br>
+        {<br>
+         digitalWrite(ledPin, HIGH); &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// sets the LED on<br>
+         delay(1000); &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// waits for a second<br>
+         digitalWrite(ledPin, LOW); &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// sets the LED off<br>
+         delay(1000); &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// waits for a second<br>
+        }<br>
+      </p>
+      <p> Para mais exemplos de funções de entrada e saída, acesse <a href="https://eletronicaparaartistas.com.br/arduino-10-funcoes-listas-bibliotecas/">Funções de Entradas e Saídas</a>
+

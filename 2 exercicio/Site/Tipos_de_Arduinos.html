@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Arduino</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="Autordoprograma.html">
+<link rel="stylesheet" type="text/css" href="Estilo.css">
+<body class="a">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="Arduino.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Inicio</a>
+    <a href="Hardware_do_arduino.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Hadware do Arduino</a>
+    <a href="Software.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white ">Software</a>
+    <a href="Tipos_de_Dados.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Tipos de Dados</a>
+    <a href="entrada_e_saida.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Função de Entrada e Saída</a>
+    <a href="Autor_do_site.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Autor do site</a>
+  </div>
+</div>
+
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-theme-l1" href="#">Tipos de Arduinos</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="Tipos_de_controladores.html">Tipos de microcontroladores</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="Modulos.html">Obter módulos para arduino</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="Experimentos.html">Experimentos</a>
+</nav>
+  
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px">
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1> Tipos de Arduinos mais comuns</h1>
+        <p> Esse é o Arduino mais famoso e vendido no mercado. Dessa forma, que está começando a aprender sobre microcontroladores Arduino, geralmente compra o Arduino Uno para começar.O Arduino Uno possui 14 portas digitais, sendo que 6 podem ser usadas como saídas PWM, e possui 6 portas analógicas. Ele trabalha com um microcontrolador ATmega328, que é montado sobre um socket na placa, ou seja, você pode remover e trocar ele a hora que quiser. Se acontecer de queimar o microcontrolador, basta trocar ele, o que é uma grande vantagem em relação aos outros Arduinos, que tem o microcontrolador soldado na placa.</p>
+        <center><img src="Imagens/arduino_uno.jpg" width="50%"> </center>
+
+      <p>A tensão de alimentação é de 7-12Vdc, e a tensão de trabalho dele é 5Vdc, e ele possui 32kb de memória. Eu recomendo esse Arduino para iniciantes, já que a memória dele da para muitos projetos e ele tem um bom número de portas, além da vantagem de poder trocar o microcontrolador, coisa que os outros Arduinos não tem.</p>
+
+      <h4><b>Arduino Leornado</b></h4>
+        <p>Muito parecido com o Arduino Uno, porém com mais portas e com outro microcontrolador. Possui 20 portas digitais, sendo 7 PWM, e possui 12 portas analógicas. Entretanto, o microcontrolador que é o Atmega32u4, é soldado na placa. Possui 32kb de memória.</p>
+         <center><img src="Imagens/Leornado.jpg" width="50%"> </center>
+      <h4><b>Arduino MEGA 2560</b></h4>
+      <p>Possui 54 portas digital, dessas 15 são PWM, e possui 15 portas analógicas. Ele trabalha com o microcontrolador Atmega2560.</p>
+          <center><img src="Imagens/Mega.jpg" width="50%"> </center>
+          <p> O Arduino Mega possui 256kb de memória, e tensão de alimentação de 7-12Vdc, sendo que a tensão de trabalho é de 5Vdc.É indicado para projetos maiores, que vão necessitar de mais portas e mais espaço na memória para programação. Em contrapartida, ele custa o dobro de um Arduino Uno, mas ainda é muito indicado, até mesmo para iniciantes. A grande vantagem além da quantidade de portas é a memória estendida, permitindo assim que você não gaste tanto tempo otimizando o código para ele caber em memórias menores. </p>
+
+          <h4><b>Arduino MEGA ADK</b></h4>
+          <p>Assim como o Arduino Mega 2560, possui 54 portas digitais, dessas 15 PWM, e possui 15 portas analógicas. Trabalha com o microcontrolador 2560, e tem 256kb de memória.</p>
+          <center><img src="Imagens/ADK.jpg" width="50%"> </center> 
+           <h4><b>Arduino nano</b></h4>
+           <p> Placa muito compacta, possui somente um conector USB para alimentação e conexão no computador, com tensão de alimentação de 7-12Vdc e tensão de trabalho de 5Vdc. Dessa forma, a alimentação externa é feita pelo pino Vin. Ele trabalha com um microcontrolador Atmega168, que possui 16kb de memória (nas versões Nano 2.x) ou um Atmega328, que possui 32kb de memória (nas versões Nano 3.x).</p>
+           <center><img src="Imagens/nano.jpg" width="50%"> </center>
+             <h4><b>Arduino Pro mini</b></h4>
+             <p>Placa mais compacta ainda, dessa vez com microcontrolador Atmega168. É menor que o Arduino Nano. Possui duas versões, uma com tensão de trabalho de 3,3Vdc, e outra com tensão de trabalho de 5Vdc.</p>
+              <center><img src="Imagens/mini.jpg" width="50%"> </center>
+              <p>Possui, assim como o Nano, 14 portas digitais, sendo 6 PWM, e possui 8 portas analógicas. Um detalhe é que ele não possui porta USB para comunicação, para isso você deve ou comprar um módulo USB separado, ou programar ele a partir de outro Arduino.</p>
+
+          <h4><b>Arduino Esplora- Arduino exótico</b></h4>
+              <p> Com um formato muito parecido de um controle de videogame, assim é uma placa diferente de todas as outras vistas até agora. É baseado no Arduino Leonardo, já que trabalha com um microcontrolador Atmega32u4, com 32kb de memória.
+            </p>
+              <center><img src="Imagens/exotico.jpg" width="50%"> </center>
+              <p> Assim, a placa vem com vários sensores e componentes embutidos, como: <br>
+                <ul>
+                  <li>Joystick</li>
+                  <li>Potenciômetro Linear Deslizante</li>
+                  <li>Sensor de temperatura</li>
+                  <li>Sensor de Luz</li>
+                  <li>Acelerômetro</li>
+                  <li>LED RGB</li>
+                  <li>Microfone</li>
+                 <li>Pushbuttons</li>
+               </ul>
+              </p>
+

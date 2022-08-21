@@ -1,0 +1,8 @@
+Site : 
+
+Tela cheia - 4 colunas ;
+Tela média - 3 colunas e a outra embaixo;
+limite principal - 2 colunas e 2 empilhadas;
+limite final - as 4 empilhadas.
+
+Usando Bootstrap 4

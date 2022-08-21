@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formação inline</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			text-align: justify;
+		}
+		body{
+			min-width: 550px;
+		}
+		#principal{
+			padding-left: 200px;
+			padding-right: 150px;
+			background-color: #F6CECE;
+		}
+		#principal .coluna{
+			position: relative;
+			float: left;
+		}
+		#cabecalho{
+			background-color: #E0F8E0;
+		
+		}
+		#rodape{
+			background-color: #CEE3F6;
+		}
+		#centro{
+			width: 100%;
+			padding:0px 10px 10px 0px;
+		}
+		#esquerda{
+			width: 190px;
+			padding: 0px 0px 0px 0px;
+			margin-left:-100%;
+			right: 200px;
+		}
+		#direita{
+			width: 150px;
+			padding:0px 10px 10px 0px;
+			right: 200px;
+			margin-right: -150px;
+		}
+		#rodape{
+			clear:both;
+		}
+	</style>
+	</head>
+	<body>
+		<!--cabeçalho -->
+		<div id="cabecalho">
+			<p>
+				is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+			</p>
+		</div>
+		<div id="principal">
+			<!--Coluna central-->
+			<div id="centro" class="coluna">
+				<p>
+			is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			</p>
+			</div>
+				<!-- coluna esquerda -->
+			<div id="esquerda" class="coluna">
+			<p>
+				<strong>ESQUERDA :</strong>  is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+			</p>
+			</div>
+		</div>
+				<!-- coluna direita -->
+			<div id="direita" class="coluna">
+				<p>
+				<strong> DIREITA :</strong> simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+			</p>
+			</div>
+		</div>
+		<div id="rodape">
+			<p>
+				is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+			</p>
+		</div>
+	</body>
+</html>

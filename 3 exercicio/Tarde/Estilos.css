@@ -1,0 +1,60 @@
+body,h1,h2,h4,h5 {
+	font-family: "Raleway", sans-serif;
+}
+
+.fundo {
+	background-color: black;
+}
+
+.rodape{
+	background-color: #FE9A2E;
+}
+
+.entrada {
+	color: white;
+}
+.capa {
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+}
+
+div+footer {
+	margin-top: 500px;
+}
+
+.musica{
+	font-size: 1.5em;
+	display:inline-table;
+	color: purple;
+}
+
+.button {
+	margin-left: 10px;
+	margin-top:none;
+}
+h3{
+ color: green;
+}
+
+p {
+	font-size: 1.5em;
+	text-align: justify;
+	font-style: bold;
+}
+
+.nome {
+	font-size: 1em;
+}
+
+.button2 {
+	margin-left: 735px;
+	margin-bottom: none;
+	margin-right: 10px;
+}
+
+.imagem {
+	float: left;
+}
